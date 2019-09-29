@@ -12,7 +12,7 @@ final class FileService : Service {
     static let RESOURCE_TYPE : String = "json"
     
     func fetchConverter(_ base: String, completion: @escaping ((Result<CurrencyConverter, ErrorResult>) -> Void)) {
-        guard let data = FileManager.readJson(forResource: "sample") else {
+        guard let data = FileManager.readJson(forResource: "response", forClass: FileService.self) else {
             completion(Result.failure(ErrorResult.custom(string: "No file or data found")))
             return
         }
@@ -26,9 +26,9 @@ final class FileService : Service {
 
 extension FileManager {
     
-    static func readJson(forResource filename: String) -> Data? {
+    static func readJson(forResource filename: String, forClass : AnyClass) -> Data? {
         
-        let bundle = Bundle(for: FileService.self)
+        let bundle = Bundle(for: forClass)
         if let path = bundle.path(forResource: filename, ofType: FileService.RESOURCE_TYPE) {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
