@@ -38,6 +38,8 @@
 		576AC48D2341160F00A6EECA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 576AC48C2341160F00A6EECA /* response.json */; };
 		576AC4902341193F00A6EECA /* CurrencyConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AC48F2341193F00A6EECA /* CurrencyConverterTest.swift */; };
 		576AC4942341212800A6EECA /* FileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AC4932341212800A6EECA /* FileService.swift */; };
+		576AC4982341A35C00A6EECA /* FileServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576AC4972341A35C00A6EECA /* FileServiceTest.swift */; };
+		576AC4992341A50D00A6EECA /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 576AC48C2341160F00A6EECA /* response.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,7 @@
 		576AC48C2341160F00A6EECA /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		576AC48F2341193F00A6EECA /* CurrencyConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterTest.swift; sourceTree = "<group>"; };
 		576AC4932341212800A6EECA /* FileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileService.swift; sourceTree = "<group>"; };
+		576AC4972341A35C00A6EECA /* FileServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 		576AC434233A3C9000A6EECA /* FirstAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				576AC4952341A33B00A6EECA /* service */,
 				576AC48E2341192500A6EECA /* model */,
 				576AC4872340FF8300A6EECA /* helper */,
 				576AC437233A3C9000A6EECA /* Info.plist */,
@@ -293,6 +297,22 @@
 			path = local;
 			sourceTree = "<group>";
 		};
+		576AC4952341A33B00A6EECA /* service */ = {
+			isa = PBXGroup;
+			children = (
+				576AC4962341A34700A6EECA /* local */,
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		576AC4962341A34700A6EECA /* local */ = {
+			isa = PBXGroup;
+			children = (
+				576AC4972341A35C00A6EECA /* FileServiceTest.swift */,
+			);
+			path = local;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576AC4992341A50D00A6EECA /* response.json in Resources */,
 				576AC42B233A3C9000A6EECA /* LaunchScreen.storyboard in Resources */,
 				576AC428233A3C9000A6EECA /* Assets.xcassets in Resources */,
 				576AC423233A3C8D00A6EECA /* Main.storyboard in Resources */,
@@ -456,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576AC4982341A35C00A6EECA /* FileServiceTest.swift in Sources */,
 				576AC4892340FFA100A6EECA /* ParserHelperTest.swift in Sources */,
 				576AC4902341193F00A6EECA /* CurrencyConverterTest.swift in Sources */,
 			);
