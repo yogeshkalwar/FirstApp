@@ -14,5 +14,5 @@ struct AppConfig {
         case NETWORK
     }
     
-    static let mApiSource = ApiSource.NETWORK
+    static let mApiSource = ApiSource.LOCAL
 }
